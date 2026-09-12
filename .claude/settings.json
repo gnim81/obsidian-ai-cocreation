@@ -1,0 +1,36 @@
+{
+  "defaultMode": "acceptEdits",
+  "permissions": {
+    "allow": [
+      "Edit(03-Projects/**/20-notes/**)",
+      "Edit(03-Projects/**/30-drafts/**)",
+      "Edit(01-Inbox/**)",
+      "Bash(git status *)",
+      "Bash(git diff *)",
+      "Bash(git log *)"
+    ],
+    "ask": [
+      "Bash(git commit *)"
+    ],
+    "deny": [
+      "Edit(02-Areas/**)",
+      "Edit(03-Projects/**/10-source/**)",
+      "Edit(03-Projects/**/40-review/**)",
+      "Edit(03-Projects/**/50-final/**)",
+      "Edit(03-Projects/**/60-published/**)",
+      "Edit(00-System/**)",
+      "Edit(04-Resources/**)",
+      "Edit(05-Archive/**)",
+      "Edit(_INDEX.md)",
+      "Edit(CLAUDE.md)",
+      "Edit(AGENTS.md)",
+      "Edit(.obsidian/**)",
+      "Edit(.claude/settings.json)",
+      "Edit(.obsidian-agentprotected)",
+      "Edit(.obsidian-agentignore)",
+      "Edit(.mcp.json)",
+      "Bash(rm *)"
+    ],
+    "disableBypassPermissionsMode": "disable"
+  }
+}

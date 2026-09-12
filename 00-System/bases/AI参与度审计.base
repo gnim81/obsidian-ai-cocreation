@@ -1,0 +1,13 @@
+filters:
+  and:
+    - authored_by != ""
+    - file.inFolder("03-Projects")
+views:
+  - type: table
+    name: AI 参与度审计
+    order:
+      - file.name
+      - authored_by
+      - ai_level
+      - ai_model
+      - updated

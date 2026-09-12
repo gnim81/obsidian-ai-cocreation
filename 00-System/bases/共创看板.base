@@ -1,0 +1,17 @@
+filters:
+  and:
+    - type == "draft"
+    - file.inFolder("03-Projects")
+views:
+  - type: table
+    name: 共创看板
+    groupBy:
+      property: status
+      direction: ASC
+    order:
+      - file.name
+      - topic
+      - version
+      - authored_by
+      - updated
+      - due

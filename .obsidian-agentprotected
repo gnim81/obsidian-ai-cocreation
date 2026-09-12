@@ -1,0 +1,11 @@
+# agent 可读但永不写入（由 Vault Operator 插件读取，写操作即使显式批准也会被拒）
+# 本文件本身被写保护，AI 不得修改
+10-source/
+40-review/
+50-final/
+60-published/
+02-Areas/
+00-System/
+04-Resources/
+05-Archive/
+.obsidian/

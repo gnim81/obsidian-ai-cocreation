@@ -1,0 +1,7 @@
+# agent 完全不可见的文件（gitignore 语法，由 Vault Operator 插件读取）
+# 只藏本地会话状态/可能的密钥；.obsidian/ 等走 .obsidian-agentprotected（可读不可写）
+# 本文件本身被写保护，AI 不得修改
+.claude/settings.local.json
+.claude/sessions/
+.claudian/
+.vault-operator/

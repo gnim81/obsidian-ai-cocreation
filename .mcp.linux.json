@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "vault-read": {
+      "command": "npx",
+      "args": ["@bitbonsai/mcpvault@latest", "__VAULT_PATH__", "--read-only"]
+    },
+    "project-rw": {
+      "command": "npx",
+      "args": ["@bitbonsai/mcpvault@latest", "__VAULT_PATH__/03-Projects"]
+    }
+  }
+}
