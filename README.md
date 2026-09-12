@@ -58,7 +58,7 @@
 ## 快速开始
 
 ```bash
-git clone https://github.com/<you>/obsidian-ai-cocreation.git my-vault
+git clone https://github.com/gnim81/obsidian-ai-cocreation.git my-vault
 cd my-vault
 bash init-vault.sh                 # 可选：--areas "写作,编程,投资" 自定义领域
 ```

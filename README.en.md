@@ -34,7 +34,7 @@ Honest scoping included: L3's shadow snapshots do **not** capture direct writes 
 ## Quick start
 
 ```bash
-git clone https://github.com/<you>/obsidian-ai-cocreation.git my-vault
+git clone https://github.com/gnim81/obsidian-ai-cocreation.git my-vault
 cd my-vault
 bash init-vault.sh              # optional: --areas "Writing,Coding,Investing"
 ```
