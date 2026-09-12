@@ -1,10 +1,11 @@
+# AI participation audit: files carrying authored_by, for post-hoc fact-check triage
 filters:
   and:
-    - authored_by != ""
+    - 'authored_by != ""'
     - file.inFolder("03-Projects")
 views:
   - type: table
-    name: AI 参与度审计
+    name: AI audit
     order:
       - file.name
       - authored_by

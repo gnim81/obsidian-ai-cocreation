@@ -1,27 +1,27 @@
 ---
-description: 领域判断的写与改：新判断暂存 Inbox+待粘贴增量；旧判断提修正案（changelog 不覆盖）
-argument-hint: <领域名> <新判断内容，或：修正 <笔记路径>：新证据>
+description: Write or revise area judgments: new judgments staged into Inbox + paste-ready deltas; revisions proposed as changelogs (never overwrites)
+argument-hint: <area> <new judgment, or: revise <note path>: new evidence>
 ---
-目标：$ARGUMENTS
+Goal: $ARGUMENTS
 
-设计前提：`02-Areas/` 是 AI 只读的知识层。本命令走"暂存 + 待粘贴"模式，落库与修正由人工完成（机制见使用指南 §4.12 写/改/还）。
+Design premise: `02-Areas/` is the AI read-only knowledge layer. This command uses a "stage + paste-ready" mode; landing and revising are done by the human (mechanism: GUIDE.md §4.12 write/revise/return).
 
-**分支 A——新判断**（参数是判断内容）：
-1. 确认 `02-Areas/<领域>/` 存在（领域清单见 CLAUDE.md 路由表）；不存在则停下，输出新领域建立指引（使用指南 §9.1），不要代建。
-2. 写暂存笔记 `01-Inbox/<今天日期>-area-<领域>-<小写连字符短标识>.md`（Inbox 是 AI 可写区）：
-   - frontmatter：type: area-note、area: <领域>、authored_by: ai-assisted（AI 整理）或 human（纯转写）、created: 今天
-   - 正文：结论先行 + 证据回链；我的原话放引用块保留，AI 提炼部分明确标注
-3. 输出 `_context.md` 待粘贴增量（加哪几行、加在哪个小节，附来源链接），标注"请人工审定；加一行想一行要不要删"（500 词上限）。
-4. 提醒：在 Obsidian 里把暂存笔记拖进 `02-Areas/<领域>/`（双链自动跟随）。
+**Branch A — new judgment** (the argument is the judgment itself):
+1. Confirm `02-Areas/<area>/` exists (see the CLAUDE.md routing table); if not, stop and print the new-area setup instructions (GUIDE.md §9.1) — never create it yourself.
+2. Write the staging note `01-Inbox/<today>-area-<area>-<lowercase-hyphen-slug>.md` (Inbox is AI-writable):
+   - Frontmatter: type: area-note, area: <area>, authored_by: ai-assisted (AI distilled) or human (pure transcription), created: today
+   - Body: conclusion first + evidence links; my original words in quote blocks; AI-distilled parts clearly marked
+3. Output the paste-ready `_context.md` delta (which lines, which section, with provenance), marked "review before pasting; adding a line means considering which line to drop" (500-word cap).
+4. Remind me: drag the staging note into `02-Areas/<area>/` in Obsidian (wikilinks follow automatically).
 
-**分支 B——修正旧判断**（参数含"修正"+ 笔记路径）：
-1. 读该笔记与我的新证据。
-2. 按修正记录格式生成**待粘贴**修正段（不直接改，02-Areas 只读）：
+**Branch B — revise an existing judgment** (the argument contains "revise" + a note path):
+1. Read that note and my new evidence.
+2. Generate a paste-ready revision in changelog format (never edit directly — 02-Areas is read-only):
    ```
-   YYYY-MM 修正：<新结论 / 新证据 / 样本量变化>
-   原判断（YYYY-MM）：<保留原文>
+   YYYY-MM revision: <new conclusion / new evidence / sample-size change>
+   original (YYYY-MM): <kept verbatim>
    ```
-3. 若该判断被 `_context.md` 压缩引用，一并输出对应行的替换文本。
-4. 提醒：认知更新是记 changelog 不是覆盖——保留演化轨迹和证据量变化。
+3. If the judgment is compressed inside `_context.md`, also output the replacement line for it.
+4. Remind me: updating cognition is a changelog, not an overwrite — preserve the evolution trail and the evidence size.
 
-边界：全程只写 `01-Inbox/`；不得用 bash mv/git mv 移入 `02-Areas/`；移动与粘贴由我在 Obsidian 完成。
+Boundaries: only ever write inside `01-Inbox/`; never move files into `02-Areas/` via bash mv/git mv; the move and the paste are done by me in Obsidian.

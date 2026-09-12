@@ -1,0 +1,17 @@
+# My turn: drafts with status == revising (awaiting human edits); stale = days since last update
+formulas:
+  stale: '(now() - file.mtime).days'
+filters:
+  and:
+    - 'status == "revising"'
+    - file.inFolder("03-Projects")
+views:
+  - type: table
+    name: My turn
+    order:
+      - file.name
+      - topic
+      - version
+      - updated
+      - due
+      - formula.stale

@@ -1,26 +1,26 @@
 ---
 type: voice-reference
-updated: 2026-09-06
+updated: 2026-09-12
 ---
-# voice-reference：声音与风格库
+# voice-reference: voice & style library
 
-> 这份文件由**真实编辑证据**长出来：每次大幅修改 AI 草稿后，让 AI 分析修改模式并回写。控制在 500 词内。
+> This file grows from **real editing evidence**: after each round of major human edits to an AI draft, have the AI analyze the diff patterns and propose updates. Keep it under 500 words.
 
-## 我会做的修改（从 diff 中沉淀）
+## Edits I make (distilled from diffs)
 
-1. 删掉花哨比喻，直说结论。
-2. 把自己的真实观察写进去，替换泛泛举例。
-3. 
+1. Delete flowery metaphors; state the conclusion directly.
+2. Replace generic examples with first-hand observations.
+3.
 
-## 我会保留的特征
+## Traits I keep
 
-1. 
+1.
 
-## 高频禁用词 / 句式
+## Banned words / patterns
 
-- "赋能""抓手""彻底颠覆"
-- 
+- "empower", "leverage", "disrupt" (and their equivalents)
+-
 
-## 范文段落
+## Exemplar passages
 
-> 
+>

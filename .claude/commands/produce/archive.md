@@ -1,22 +1,22 @@
 ---
-description: 归档已完成项目（软删除）：脚本移入 05-Archive，AI 提炼结论回写内容
-argument-hint: <项目名>
+description: Archive a finished project (soft delete): script moves it into 05-Archive; AI distills conclusions for write-back
+argument-hint: <project-name>
 ---
-目标：$ARGUMENTS
+Goal: $ARGUMENTS
 
-分工：机械部分（status 翻转、目录移动）由确定性脚本完成；你负责前置确认与结论提炼。
+Division of labor: the mechanical parts (status flip, directory move) are done by a deterministic script; you handle pre-checks and conclusion extraction.
 
-前置检查（有问题先停下问我，不要猜）：
-1. `03-Projects/<项目>/` 存在；`_brief.md` §9 当前进展已收尾。
-2. `50-final/` 有定稿、`journal.md` 末条有复盘——缺了先提醒我补。
+Pre-checks (stop and ask me if anything is off — never guess):
+1. `03-Projects/<project>/` exists; `_brief.md` §9 shows the project wrapped up.
+2. `50-final/` contains a final version and `journal.md` has a closing retrospective — if missing, remind me to fill them first.
 
-步骤：
-1. 经我确认后执行：`bash 00-System/scripts/archive-project.sh <项目名> -y`
-   （脚本完成：status→archived、updated 刷新、移入 `05-Archive/<年>/`；含未提交文件时自动退回普通 mv。）
-2. **禁止修改 `_INDEX.md` 和 `02-Areas/*/_context.md`（AI 禁写区）**。改为输出待粘贴内容：
-   a) 提醒我删除 `_INDEX.md`「进行中的创作主题」中该项目的行；
-   b) 从 `journal.md` 复盘提炼 2–3 条长期结论（每条附出处），标注"请人工审定后粘贴"进相关领域 `_context.md`。
-3. 提醒我：结论回写 Areas 是归档的核心价值（飞轮），别跳过；随后手动 commit：`git add -A && git commit -m "archive: <项目名>"`。Obsidian 会自动跟随移动更新双链。
-4. 汇报：移动前后路径、提炼出的结论清单。
+Steps:
+1. After my confirmation, run: `bash 00-System/scripts/archive-project.sh <project-name> -y`
+   (The script does: status→archived, updated refresh, move into `05-Archive/<year>/`; falls back to plain mv when uncommitted files are present.)
+2. **Never modify `_INDEX.md` or `02-Areas/*/_context.md` (AI write-forbidden).** Instead, output paste-ready content:
+   a) Remind me to delete the project's row from `_INDEX.md` "Active projects";
+   b) Distill 2–3 long-term conclusions from the `journal.md` retrospective (each with provenance), marked "paste after human review" into the related area's `_context.md`.
+3. Remind me: writing conclusions back to Areas is the core value of archiving (the flywheel) — don't skip it; then commit manually: `git add -A && git commit -m "archive: <project-name>"`. Obsidian follows the move and updates wikilinks automatically.
+4. Report: paths before/after the move, and the distilled conclusion list.
 
-注意：本命令是本库唯一的"删"——**软删（归档）**。真正的硬删除（rm）对 AI 是 deny 的，由人工执行。
+Note: this command is the vault's only "delete" — a **soft delete (archive)**. Hard deletes (rm) are denied for AI and executed by the human.

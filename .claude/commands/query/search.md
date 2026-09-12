@@ -1,11 +1,11 @@
 ---
-description: 全库只读检索知识（走路由表，不盲扫）
-argument-hint: <检索主题>
+description: Vault-wide read-only knowledge search (via the routing table, no blind scanning)
+argument-hint: <topic>
 ---
-目标：$ARGUMENTS
+Goal: $ARGUMENTS
 
-步骤：
-1. 先查 `CLAUDE.md` 的领域路由表，命中哪个领域先读 `02-Areas/<领域>/_context.md`。
-2. 再按关键词深入该领域与 `04-Resources/` 检索，顺双链扩展。
-3. 汇总回答，每条结论附文件路径出处。
-4. 只读：不修改、不新建任何文件。
+Steps:
+1. Check the area routing table in `CLAUDE.md` first; for any matching area, read `02-Areas/<area>/_context.md` before anything else.
+2. Then search that area and `04-Resources/` by keywords, expanding along wikilinks.
+3. Summarize the answer, attaching file-path provenance to every conclusion.
+4. Read-only: never modify or create any file.

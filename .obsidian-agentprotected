@@ -1,5 +1,6 @@
-# agent 可读但永不写入（由 Vault Operator 插件读取，写操作即使显式批准也会被拒）
-# 本文件本身被写保护，AI 不得修改
+# Readable by the agent but never writable (read by Vault Operator; writes rejected even with explicit approval)
+# This file is itself write-protected — the AI must not modify it
+# NOTE: only constrains writes going through Obsidian; external tool writes rely on MCP pinning + deny rules
 10-source/
 40-review/
 50-final/

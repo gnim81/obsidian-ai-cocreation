@@ -1,21 +1,21 @@
 ---
 type: note-card
-title: "<摘要卡/论点/案例卡标题>"
-topic: "[[<所属项目>]]"
+title: "<summary / claim / case card title>"
+topic: "[[<project>]]"
 status: active
 authored_by: ai-generated
 ai_level: assist
 ai_model: ""
 created: {{date:YYYY-MM-DD}}
 updated: {{date:YYYY-MM-DD}}
-tags: [笔记卡]
+tags: [note-card]
 ---
-# <标题>
+# <Title>
 
-## 核心论点
+## Core claim
 
-## 要点
+## Key points
 
-## 溯源（必须回链素材出处）
+## Provenance (must link back to the source)
 
-- 来源：[[10-source/…]]
+- Source: [[10-source/…]]

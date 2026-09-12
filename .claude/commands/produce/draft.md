@@ -1,13 +1,13 @@
 ---
-description: 按 _brief.md + challenges.md 共创初稿，双写 _baseline 存底
-argument-hint: <项目名> <稿子标识，如：第3节>
+description: Co-write a first draft per _brief.md + challenges.md, double-written with a _baseline copy
+argument-hint: <project-name> <draft label, e.g. lesson-3>
 ---
-目标：$ARGUMENTS
+Goal: $ARGUMENTS
 
-步骤：
-1. 读 `03-Projects/<项目>/_brief.md` 与 `challenges.md`。若没有 `_brief.md`，停下来提醒我先建简报，不要自行发挥。
-2. 读 `20-notes/` 下相关笔记卡，只使用可溯源到 `10-source/` 的事实。
-3. 初稿写到 `30-drafts/v<下一版本号>/`，frontmatter 按 `00-System/templates/tpl-draft.md`：status: drafting、authored_by: ai-generated、ai_level: copilot。
-4. 同时把 untouched 副本写到 `30-drafts/_baseline/` 同名文件。
-5. 行文正面回应 challenges.md 里的反方论据；禁用 `_brief.md` §6 的 Must avoid 词。
-6. 完成后汇报：写到了哪、基于哪些素材、还有哪些卡点。
+Steps:
+1. Read `03-Projects/<project>/_brief.md` and `challenges.md`. If there is no `_brief.md`, stop and tell me to write one first — never improvise.
+2. Read the relevant note cards under `20-notes/`; use only facts traceable to `10-source/`.
+3. Write the draft to `30-drafts/v<next>/`, frontmatter per `00-System/templates/tpl-draft.md`: status: drafting, authored_by: ai-generated, ai_level: copilot.
+4. Simultaneously write an untouched copy with the same filename to `30-drafts/_baseline/`.
+5. Address the counter-arguments in challenges.md head-on; avoid every "Must avoid" item from brief §6.
+6. Report: where it was written, which material it was based on, and any open blockers.

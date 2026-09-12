@@ -1,42 +1,42 @@
 ---
 type: project-brief
-topic: <主题名>
+topic: <topic>
 area: []
 status: active
 updated: {{date:YYYY-MM-DD}}
 ---
-# 简报：<主题名>
+# Brief: <topic>
 
-> AI 每次会话先读本文件。全文控制在 500 词内，过时立即更新。
+> AI reads this file at the start of every session. Keep it under 500 words; update when stale.
 
-## 1. 一句话目标
+## 1. One-sentence goal
 
-## 2. 交付物
-形式 / 篇幅 / 平台：
+## 2. Deliverables
+Format / length / platforms:
 
-## 3. 受众
-角色 / 已知 / 担心 / 读后改变：
+## 3. Audience
+Role / already knows / fears / change after reading:
 
-## 4. 核心角度（与常见内容的差异）
+## 4. Core angle (vs. typical content)
 
-## 5. 声音与风格
-范文：[[04-Resources/voice-reference]]
+## 5. Voice & style
+Reference: [[04-Resources/voice-reference]]
 
 ## 6. Must include / Must avoid
-必含：
-禁止：编造数据/案例；承诺收益；
+Include:
+Avoid: fabricating data/cases; income promises;
 
-## 7. 素材与事实来源
-- 
+## 7. Sources & facts
+-
 
-## 8. 结构（当前版）
+## 8. Outline (current)
 01 … / 02 …
 
-## 9. 当前进展
-已完成： / 进行中（卡点）： / 下一步：
+## 9. Current status
+Done: / In progress (blocked on): / Next:
 
-## 10. 验收标准（pass/fail）
-1) 
+## 10. Acceptance criteria (pass/fail)
+1)
 
-## 11. 权限边界
-AI 可写：30-drafts/、20-notes/；禁止写入：10-source/、40-review/、50-final/、02-Areas/。
+## 11. Permission boundaries
+AI may write: 30-drafts/, 20-notes/; forbidden: 10-source/, 40-review/, 50-final/, 02-Areas/.

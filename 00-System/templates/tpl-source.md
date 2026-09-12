@@ -1,18 +1,18 @@
 ---
 type: source
-source: "<原始 URL>"
+source: "<original URL>"
 captured: {{date:YYYY-MM-DD}}
-tags: [来源/剪藏]  # 按类型改：访谈 → 来源/访谈；灵感 → 来源/灵感
+tags: [source/clipping]
 ---
-# <标题>
+# <Title>
 
-> [!note] 使用规则
-> 本文件位于 `10-source/`，**append-only**：AI 只可引用、摘录、结构化、建链接，不得改写本文件。
+> [!note] Rules
+> This file lives in `10-source/` and is **append-only**: the AI may quote, excerpt, structure, and link — never rewrite this file.
 
-## 原文摘录（引用块永不改动）
+## Original excerpt (quote blocks are never modified)
 
-> 原文段落放在这里
+> Original text goes here
 
-## 我的批注（写在引用块下方）
+## My annotations (written below the quote blocks)
 
-- 
+-

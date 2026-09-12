@@ -1,12 +1,12 @@
 ---
-description: 对比人工修改版与基线，按修改意图写下一个版本（不动旧版）
-argument-hint: <项目名> <文件名>
+description: Diff the human-edited version against the baseline, then write the next version per the editing intent (old versions untouched)
+argument-hint: <project-name> <filename>
 ---
-目标：$ARGUMENTS
+Goal: $ARGUMENTS
 
-步骤：
-1. diff `30-drafts/_baseline/<文件>` 与 `40-review/<文件>`，先归纳人工修改体现了什么意图（结构？语气？删冗余？）。
-2. 基于该意图写新版本到 `30-drafts/v<下一版本号>/`，同样双写 `_baseline/` untouched 副本。
-3. 旧版本目录（v1、v2…）和 `40-review/` 一律不动。
-4. 新版本 frontmatter：status: revising（AI 已按人工意图改完，等人工再审）、based_on 指向上一版。
-5. 汇报：从 diff 里读出的修改模式清单，以及你据此做了哪些改动。
+Steps:
+1. Diff `30-drafts/_baseline/<file>` against `40-review/<file>`; first summarize what the human edits reveal about intent (structure? tone? cutting redundancy?).
+2. Based on that intent, write the new version to `30-drafts/v<next>/`, again double-written with an untouched `_baseline/` copy.
+3. Never touch old version directories (v1, v2, …) or `40-review/`.
+4. New version frontmatter: status: revising (AI has applied the human's intent; awaiting the next human pass), based_on pointing at the previous version.
+5. Report: the editing patterns you read from the diff, and what you changed accordingly.

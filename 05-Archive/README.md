@@ -1,3 +1,3 @@
-# 05-Archive — 归档
+# 05-Archive — archive
 
-已完成项目整体移入 `05-Archive/<年份>/`（`/produce/archive` 或 `bash 00-System/scripts/archive-project.sh` 自动完成）。AI 只读；归档前记得把长期结论回写 `02-Areas/`。
+Finished projects move here as a whole into `05-Archive/<year>/` (done by `/produce/archive` or `bash 00-System/scripts/archive-project.sh`). AI read-only. Before archiving, remember to write long-term conclusions back into `02-Areas/`.

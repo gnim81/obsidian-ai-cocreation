@@ -1,10 +1,11 @@
+# Co-writing board: all drafts grouped by status (install a Kanban Bases View plugin to drag cards)
 filters:
   and:
-    - type == "draft"
+    - 'type == "draft"'
     - file.inFolder("03-Projects")
 views:
   - type: table
-    name: 共创看板
+    name: Co-writing board
     groupBy:
       property: status
       direction: ASC

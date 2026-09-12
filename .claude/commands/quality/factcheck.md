@@ -1,12 +1,12 @@
 ---
-description: 逐条核查稿件数据/事实/案例的溯源情况（三档清单）
-argument-hint: <文件路径，如 03-Projects/xxx/30-drafts/v2/第3节.md>
+description: Trace every data point / fact / case in a draft to its source (three-tier checklist)
+argument-hint: <file path, e.g. 03-Projects/xxx/30-drafts/v2/lesson-3.md>
 ---
-目标：$ARGUMENTS
+Goal: $ARGUMENTS
 
-步骤：
-1. 逐条列出该文件中的数据、事实、案例、引用。
-2. 每条标注能否溯源到 `10-source/` 的具体文件（或外部 URL）。
-3. 输出三档清单：可溯源（附出处链接）/ 不可溯源（建议删除或补素材）/ 存疑（需要我确认）。
-4. 禁止编造来源；找不到就是找不到。
-5. 只读操作：不修改被核查文件。
+Steps:
+1. List every data point, fact, case, and citation in the file.
+2. For each, mark whether it traces back to a specific `10-source/` file (or an external URL).
+3. Output a three-tier checklist: traceable (with source links) / untraceable (recommend deleting or gathering material) / uncertain (needs my confirmation).
+4. Never fabricate sources; if you can't find it, say so.
+5. Read-only: do not modify the file under review.

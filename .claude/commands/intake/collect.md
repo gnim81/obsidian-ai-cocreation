@@ -1,12 +1,12 @@
 ---
-description: 把一段文字/链接/想法收进 01-Inbox（唯一入口，先不分类）
-argument-hint: <内容：一段文字或 URL，可附一句话备注>
+description: Capture a snippet of text/link/idea into 01-Inbox (single entry point, no classification yet)
+argument-hint: <content: text or URL, optionally with a one-line note>
 ---
-目标：$ARGUMENTS
+Goal: $ARGUMENTS
 
-步骤：
-1. 在 `01-Inbox/` 新建 `<今天日期>-<小写连字符短标识>.md`。
-2. frontmatter：type: inbox、captured: 今天、source:（URL 有则填）、tags: [inbox]。
-3. 正文：我给的内容原样放 `>` 引用块，我的备注写在下方——**不改写、不润色、不总结**，Inbox 只收不改。
-4. 若内容涉及访谈对象、未公开数据、他人稿件，提醒我：这类内容不应进入云端模型上下文，建议改为本地手工保存。
-5. 汇报：文件路径。每周清理时（使用指南 §4.2）再决定去向：项目素材 / 领域笔记 / 删除。
+Steps:
+1. Create `01-Inbox/<today>-<lowercase-hyphen-slug>.md`.
+2. Frontmatter: type: inbox, captured: today, source: (URL if any), tags: [inbox].
+3. Body: put my content verbatim inside a `>` quote block, my note below — **no rewriting, no polishing, no summarizing**. Inbox only captures.
+4. If the content involves interviewees, unpublished data, or others' manuscripts, warn me: such content must not enter cloud-model context — save it locally instead.
+5. Report: the file path. Its destination is decided during the weekly triage (GUIDE.md §4.3).

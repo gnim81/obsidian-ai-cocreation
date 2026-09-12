@@ -1,2 +1,2 @@
-# bash 脚本强制 LF，否则 Windows CRLF 会让脚本在 Linux 上无法运行
+# Force LF for bash scripts — Windows CRLF would break them on Linux
 *.sh text eol=lf
